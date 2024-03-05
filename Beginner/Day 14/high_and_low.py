@@ -16,9 +16,9 @@ def format(account):
 def compare_accounts(account_a, account_b):
     """Compare two accounts followers"""
     if account_a["follower_count"] > account_b["follower_count"]:
-        return "A"
+        return "a"
     else:
-        return "B"
+        return "b"
 
 
 
@@ -41,7 +41,7 @@ def play_game():
         """Returns which player has more followers"""
         answer = compare_accounts(account_a, account_b)
 
-        user_answer = input("Who has more followers? Type 'A' or 'B': ")
+        user_answer = input("Who has more followers? Type 'A' or 'B': ").lower()
 
         if user_answer == answer:
             score += 1
