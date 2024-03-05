@@ -46,9 +46,9 @@ def play_game():
         if user_answer == answer:
             score += 1
             print(logo)
-            print("You are correct! Current score is " + str(count))
+            print(f"You're right! Current score: {score}.")
         else:
-            print("You are incorrect! Final score is " + str(count))
+            print(f"Sorry, that's wrong. Final score: {score}")
             is_game_over = True
 
         account_a = account_b
