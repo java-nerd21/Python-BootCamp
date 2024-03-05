@@ -17,17 +17,18 @@ def compare_accounts(account_a, account_b):
     """Compare two accounts followers"""
     if account_a["follower_count"] > account_b["follower_count"]:
         return "A"
-    elif account_a["follower_count"] < account_b["follower_count"]:
-        return "B"
     else:
-        return "C"
+        return "B"
 
 
 
-def play_game(account_a, account_b, count):
+def play_game():
     print(logo)
     
     is_game_over = False
+    account_a = random_account()
+    account_b = account_a
+    score = 0
     
     while not is_game_over:
         while account_a == account_b:
@@ -43,7 +44,7 @@ def play_game(account_a, account_b, count):
         user_answer = input("Who has more followers? Type 'A' or 'B': ")
 
         if user_answer == answer:
-            count = count + 1
+            score += 1
             print(logo)
             print("You are correct! Current score is " + str(count))
         else:
@@ -53,11 +54,7 @@ def play_game(account_a, account_b, count):
         account_a = account_b
         
 
-account_a = random_account()
-account_b = account_a
-count = 0
-
-play_game(account_a, account_b, count)
+play_game()
 
 
 
