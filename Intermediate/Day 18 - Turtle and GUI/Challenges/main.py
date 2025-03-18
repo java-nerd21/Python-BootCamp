@@ -1,8 +1,8 @@
 from turtle import Turtle, Screen
 import random
 
-timmy = Turtle()
-timmy.shape("turtle")
+#timmy = Turtle()
+#timmy.shape("turtle")
 #timmy.color("red")
 
 #Challenge 1 draw a square
@@ -39,12 +39,12 @@ timmy.shape("turtle")
 #     timmy.setheading(random.choice(directions))
 
 # # #Day 18 Challenge 5 - Change colour using RGB function
-def random_color():
-    r = random.randint(0, 255) / 255.0
-    g = random.randint(0, 255) / 255.0
-    b = random.randint(0, 255) / 255.0
-    random_color = (r, g, b)
-    return (random_color)
+# def random_color():
+#     r = random.randint(0, 255) / 255.0
+#     g = random.randint(0, 255) / 255.0
+#     b = random.randint(0, 255) / 255.0
+#     random_color = (r, g, b)
+#     return (random_color)
 
 # timmy.pensize(15)
 # timmy.speed("fastest")
@@ -56,15 +56,15 @@ def random_color():
 #      timmy.forward(30)
 #      timmy.setheading(random.choice(directions))
 
-#Day 18 Challenge 6 - Spirograph
-timmy.speed("fastest")
-timmy.pensize(2)
-timmy.hideturtle()
+# #Day 18 Challenge 6 - Spirograph
+# timmy.speed("fastest")
+# timmy.pensize(2)
+# timmy.hideturtle()
 
-for i in range(0, 360, 5): #angle
-    timmy.color(random_color())
-    timmy.setheading(i)
-    timmy.circle(100)
+# for i in range(0, 360, 5): #angle
+#     timmy.color(random_color())
+#     timmy.setheading(i)
+#     timmy.circle(100)
 
 
 
