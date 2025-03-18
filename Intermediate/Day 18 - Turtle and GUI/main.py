@@ -34,11 +34,11 @@ timmy.shape("turtle")
 # directions = [0, 90, 180, 270]
 
 # for _ in range(100):
-#     timmy.color((random.random(), random.random(), random.random())) 
+#     timmy.color((random.random(), random.random(), random.random()))
 #     timmy.forward(30)
 #     timmy.setheading(random.choice(directions))
 
-# #Day 18 Challenge 5 - Change colour using RGB function
+# # #Day 18 Challenge 5 - Change colour using RGB function
 def random_color():
     r = random.randint(0, 255) / 255.0
     g = random.randint(0, 255) / 255.0
@@ -46,16 +46,25 @@ def random_color():
     random_color = (r, g, b)
     return (random_color)
 
-timmy.pensize(15)
+# timmy.pensize(15)
+# timmy.speed("fastest")
+
+# directions = [0, 90, 180, 270]
+
+# for _ in range(100):
+#      timmy.color(random_color())
+#      timmy.forward(30)
+#      timmy.setheading(random.choice(directions))
+
+#Day 18 Challenge 6 - Spirograph
 timmy.speed("fastest")
+timmy.pensize(2)
+timmy.hideturtle()
 
-directions = [0, 90, 180, 270]
-
-for _ in range(100):
-     timmy.color(random_color())
-     timmy.forward(30)
-     timmy.setheading(random.choice(directions))
-
+for i in range(0, 360, 5): #angle
+    timmy.color(random_color())
+    timmy.setheading(i)
+    timmy.circle(100)
 
 
 
